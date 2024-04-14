@@ -183,3 +183,14 @@ body {
 .banner .button {
     border: 1px solid #E5E7EB;
 }
+
+/* footer */
+
+.footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.footer p {
+    text-align: center;
+}
