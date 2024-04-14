@@ -53,6 +53,19 @@ body {
     color: #fff;
 }
 
+.button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2872D6;
+}
+
 /* main */
 
 .main {
@@ -79,19 +92,6 @@ body {
 
 .main-text p {
     font-size: 18px;
-}
-
-.main-text button {
-    background-color: #3882F6;
-    color: #E5E7EB;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.main-text button:hover {
-    background-color: #2872D6;
 }
 
 /* second-pane */
@@ -160,4 +160,26 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #1F2937;
+}
+
+/* fourth-pane */
+
+.fourth-pane {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.banner {
+    background-color: #3882F6;
+    padding: 32px 16px;
+    border-radius: 8px;
+    color: #E5E7EB;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner .button {
+    border: 1px solid #E5E7EB;
 }
