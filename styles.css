@@ -25,14 +25,18 @@ body {
 /* header */
 
 .header {
-    height: 64px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .logo {
+    flex: 0 0 auto;
     color: #F9FAF8;
     font-size: 24px;
     font-weight: bold;
@@ -43,6 +47,11 @@ body {
 
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    flex: 0 0 auto;
 }
 
 .nav a {
@@ -75,13 +84,27 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .main-text {
+    flex: 1 1 300px;
+
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
+}
+
+.main .img-wrapper {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .img-wrapper img {
+    align-self: center;
+    max-height: 40vw;
 }
 
 .main-text h1 {
@@ -181,6 +204,7 @@ body {
 }
 
 .banner .button {
+    flex: 0 0 auto;
     border: 1px solid #E5E7EB;
 }
 
