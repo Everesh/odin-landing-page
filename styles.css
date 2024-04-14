@@ -94,11 +94,11 @@ body {
     background-color: #2872D6;
 }
 
-/* 2nd-pane */
+/* second-pane */
 
 .second-pane {
-    margin-top: 48px;
-    margin-bottom: 96px;
+    padding-top: 48px;
+    padding-bottom: 96px;
 
     display: flex;
     flex-direction: column;
@@ -138,4 +138,26 @@ body {
 
 .item p {
     text-align: center;
+}
+
+/* third pane */
+
+.third-pane {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background-color: #E5E7EB;
+}
+
+.third-pane p {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.third-pane h4 {
+    text-align: end;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F2937;
 }
