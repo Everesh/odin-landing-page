@@ -6,7 +6,7 @@
     --surface-1: #222;
     --surface-2: #282828;
     --surface-3: #333;
-    --surface-inv: #a4998a;
+    --surface-inv: #c5b7a5;
 }
 
 * {
@@ -25,10 +25,6 @@ body {
     justify-content: center;
 }
 
-body > * {
-    margin-bottom: 8em;
-}
-
 a {
     text-decoration: none;
     color: var(--text)
@@ -45,6 +41,11 @@ a {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.header,
+.paneOne {
+    margin-bottom: 8em;
 }
 
 .header nav ul {
@@ -73,12 +74,47 @@ a {
     border: none;
     border-radius: 0.5em;
     color: var(--surface-1);
-    background-color: var(--text);
+    background-color: var(--text-hl);
 }
 
 .paneTwo {
     background-color: var(--surface-inv);
     color: var(--surface-1);
-    /*tmp*/
-    height: 40em;
+    padding: 1em 0;
+}
+
+.paneTwo h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.boxes {
+    margin: 2em 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4em;
+}
+
+.box {
+    flex: 0 1 10em;
+}
+
+.box > div {
+    width: 10em;
+    height: 10em;
+    border: 0.25em solid var(--surface-1);
+    border-radius: 0.5em;
+    background-image: linear-gradient(180deg, var(--surface-1) 1.5em, transparent 1.5em);
+}
+
+.box > p {
+    text-align: center;
+}
+
+.paneThree {
+    background-color: var(--surface-2);
+    min-height: 10em;
 }
