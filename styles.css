@@ -182,7 +182,7 @@ a:focus {
 }
 
 .banner .signUp {
-    border: 0.2em solid var(--surface-1);
+    border: 0.2em solid var(--surface-3);
     background-color: var(--surface-inv);
 }
 
