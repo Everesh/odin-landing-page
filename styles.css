@@ -6,7 +6,7 @@
     --surface-1: #222;
     --surface-2: #282828;
     --surface-3: #333;
-    --surface-inv: #c5b7a5;
+    --surface-inv: #dbc9af;
 }
 
 * {
@@ -28,6 +28,15 @@ body {
 a {
     text-decoration: none;
     color: var(--text)
+}
+
+a:hover,
+a:focus {
+    color: var(--text-hl);
+}
+
+a:focus {
+    outline: none;    
 }
 
 .widthConstraint {
@@ -77,6 +86,16 @@ a {
     background-color: var(--text-hl);
 }
 
+.signUp:hover {
+    color: var(--text-hl);
+    background-color: var(--surface-1);
+    border: 0.2em solid var(--text-hl);
+}
+
+.signUp:focus {
+    outline: 0.2em solid var(--text-hl);
+}
+
 .paneTwo {
     background-color: var(--surface-inv);
     color: var(--surface-1);
@@ -116,5 +135,68 @@ a {
 
 .paneThree {
     background-color: var(--surface-2);
-    min-height: 10em;
+    padding: 8em 0;
+}
+
+.paneThree p {
+    margin: 0;
+    width: 100%;
+}
+
+.paneThree p:first-child {
+    font-style: italic;
+    font-size: 2em;
+}
+
+.paneThree p:nth-child(2) {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: end;
+}
+
+.paneFour {
+    padding: 4em 0;
+}
+
+.banner {
+    background-color: var(--surface-inv);
+    color: var(--surface-1);
+    margin: 0 4em;
+    padding: 2em 4em;
+    width: 100%;
+    border-radius: 1em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.banner * {
+    margin: 0;
+}
+
+.banner .signUp {
+    border: 0.2em solid var(--surface-1);
+    background-color: var(--surface-inv);
+}
+
+.banner .signUp:hover {
+    color: var(--text);
+    background-color: var(--surface-3);
+}
+
+.banner .signUp:focus {
+    outline: 0.2em solid var(--surface-3);  
+}
+
+.footer p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
 }
