@@ -50,6 +50,7 @@ a:focus {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
 .header,
@@ -67,10 +68,11 @@ a:focus {
 }
 
 .imgPlaceholder {
-    width: 40em;
+    flex: 0 1 40em;
     height: 20em;
     background-size: 1.5em 1.5em;
     background-image: radial-gradient(var(--text) 0.15em, transparent 0.15em);
+    margin-top: 1em;
 }
 
 .narrower {
@@ -152,6 +154,7 @@ a:focus {
     font-weight: bold;
     font-size: 1.5em;
     text-align: end;
+    margin-top: 1em;
 }
 
 .paneFour {
@@ -199,4 +202,20 @@ a:focus {
     width: 100%;
     text-align: center;
     font-size: 1.2em;
+}
+
+@media (max-width: 900px) {
+    .widthConstraint > div.constranee {
+        justify-content: space-around;
+    }
+
+
+}
+
+@media (max-width: 430px) {
+    .header > div.constranee ul {
+        flex-direction: column;
+    }
+
+    
 }
